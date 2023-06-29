@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "B5qrqqzfPmO0KMCL1dI8q18cHwloHATu4LidoCIGnR51wgbDDQ8ctPINtapoTZZVgf5AAdhWvUurxrw/09lgog==",
+  "success": true,
+  "projectFilePath": "C:\\ws_git\\Flatten\\Flatten\\Flatten.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hemak\\.nuget\\packages\\websocketsharp-netstandard\\1.0.1\\websocketsharp-netstandard.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
