@@ -8,7 +8,7 @@ namespace Flatten.Common.UserManagement
     {
         public string Name { get; set; }
         public string ID { get; set; }
-        public string PID { get; set; }
+
 
     public User() {
         
