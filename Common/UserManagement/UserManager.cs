@@ -12,10 +12,10 @@ namespace Flatten.Common.UserManagement
         
         }
 
-        public void AddUser(string ID, string userName) {
+        public void AddUser(string ID, string userName, string password) {
            
             User user= new User();
-            user.Initailize(userName, ID);
+            user.Initailize(userName, ID, password);
             userContainer.Add(userName, user);
         }
 

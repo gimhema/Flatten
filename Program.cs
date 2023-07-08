@@ -1,3 +1,4 @@
+using Flatten.Network.WebSocketAction;
 using System;
 using System.Configuration;
 using System.Security.Cryptography.X509Certificates;
@@ -44,6 +45,7 @@ namespace Example2
 
             wssv.AddWebSocketService<Echo>("/Echo");
             wssv.AddWebSocketService<Start>("/Start");
+            wssv.AddWebSocketService<EnterGameLobby>("/EnterGameLobby");
 
             
 

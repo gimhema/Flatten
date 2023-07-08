@@ -14,7 +14,6 @@
     <Folder Include="Common\GameInstance\" />
     <Folder Include="Network\DBIntergration\DBMessageAction\" />
     <Folder Include="Network\DBIntergration\DBConnection\" />
-    <Folder Include="Network\WebSocketAction\" />
   </ItemGroup>
 
 </Project>

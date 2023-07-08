@@ -9,15 +9,18 @@ namespace Flatten.Common.UserManagement
         public string Name { get; set; }
         public string ID { get; set; }
 
+        public string Password { get; set; }  
+
 
     public User() {
         
         }
 
-    public void Initailize(string name, string id)
+    public void Initailize(string name, string id, string password)
         {
             Name = name;
             ID= id;
+            Password = password;
         }
 
     }
