@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Flatten;
+using System;
 using WebSocketSharp;
 using WebSocketSharp.Server;
+using Flatten.Common;
+using Flatten.Common.UserManagement;
 
 namespace Flatten.Network.WebSocketAction
 {
@@ -16,6 +19,11 @@ namespace Flatten.Network.WebSocketAction
             {
                 string authCheckSucessMSG = "userInfoValid";
                 Send(authCheckSucessMSG);
+
+                // Add New User to UserManager
+                var userManagerInstance = UserManager.Instance();
+                userManagerInstance.AddUser(parseResult[0], parseResult[1], "");
+                
             }
 
         }

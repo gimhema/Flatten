@@ -5,11 +5,19 @@ using System.Security.Cryptography.X509Certificates;
 using WebSocketSharp;
 using WebSocketSharp.Net;
 using WebSocketSharp.Server;
+using Flatten.Common.UserManagement;
+using Flatten.Common;
 
 namespace Example2
 {
     public class Program
     {
+        public static ServerCore serverCoreGlobal;
+        public void InitializeServerCore()
+        {
+            serverCoreGlobal = new ServerCore();
+            serverCoreGlobal.Initialize();
+        }
         public static void Main(string[] args)
         {
 
@@ -46,8 +54,6 @@ namespace Example2
             wssv.AddWebSocketService<Echo>("/Echo");
             wssv.AddWebSocketService<Start>("/Start");
             wssv.AddWebSocketService<EnterGameLobby>("/EnterGameLobby");
-
-            
 
             wssv.Start();
 

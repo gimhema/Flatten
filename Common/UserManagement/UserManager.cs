@@ -6,6 +6,18 @@ namespace Flatten.Common.UserManagement
 {
     public class UserManager
     {
+        private static UserManager userManagerInstance;
+
+        public static UserManager Instance() 
+        {
+            if(userManagerInstance == null)
+            {
+                userManagerInstance = new UserManager();
+            }
+
+            return userManagerInstance; 
+        }
+
         public Dictionary<string, User> userContainer = new Dictionary<string, User>();
 
         public UserManager() {
