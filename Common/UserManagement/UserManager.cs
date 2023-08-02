@@ -24,6 +24,14 @@ namespace Flatten.Common.UserManagement
         
         }
 
+        public void ShowAllUser()
+        {
+            foreach(var userName in userContainer.Keys) 
+            { 
+                Console.WriteLine("Current User : " + userName);
+            }
+        }
+
         public void AddUser(string ID, string userName, string password) {
            
             User user= new User();

@@ -23,7 +23,7 @@ namespace Flatten.Network.WebSocketAction
                 // Add New User to UserManager
                 var userManagerInstance = UserManager.Instance();
                 userManagerInstance.AddUser(parseResult[0], parseResult[1], "");
-                
+                userManagerInstance.ShowAllUser();
             }
 
         }
@@ -41,6 +41,7 @@ namespace Flatten.Network.WebSocketAction
                 return false;
             }
             Console.WriteLine("User Checked ID : " + userID + " PW : " + password);
+
             // Check user ID and User Password . . . 
 
             // need DB Process . . .
