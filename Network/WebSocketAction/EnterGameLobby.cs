@@ -17,7 +17,7 @@ namespace Flatten.Network.WebSocketAction
 
             if (CheckValidUserAuth(parseResult[0], parseResult[1]))
             {
-                string authCheckSucessMSG = "userInfoValid";
+                string authCheckSucessMSG = "welcome to the game lobby ! !";
                 Send(authCheckSucessMSG);
 
                 // Add New User to UserManager

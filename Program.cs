@@ -26,6 +26,7 @@ namespace Example2
             wssv.AddWebSocketService<Echo>("/Echo");
             wssv.AddWebSocketService<Start>("/Start");
             wssv.AddWebSocketService<EnterGameLobby>("/EnterGameLobby");
+            wssv.AddWebSocketService<GameLobby>("/GameLobby");
 
             wssv.Start();
 
